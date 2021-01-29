@@ -5,6 +5,10 @@ $("#submit-button").on("click", function () {
     console.log($("#video-frame").attr('src'))
 })
 
+$("#complete-page-embedding").on("click", function () {
+    window.open("public/html/fullpage.html", "_blank")
+})
+
 function processVideoUri(originalUri) {
     console.log($("#video-frame").attr('src'))
     let modifiedUri = originalUri.replace("watch?v=", "embed/")
